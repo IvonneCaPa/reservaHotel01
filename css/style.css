@@ -1,0 +1,80 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 100px;
+}
+
+fieldset {
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.nombre{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+.apellidos{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorPersonas{
+    display: flex;
+    justify-content:start;
+
+}
+
+.adultos{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 0 12px;
+}
+.ninos{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.botones{
+    display: flex;
+    justify-content:space-between;
+}
+
+.botones button:first-child {
+    background-color: rgb(0, 255, 115);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.botones button:first-child:hover {
+    background-color: rgb(19, 139, 35);
+    color: white;
+}
+
+.botones button:last-child{
+    background-color: rgb(255, 168, 168);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.botones button:last-child:hover {
+    background-color: crimson;
+    color: white;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Reserva de habitación en hotel</h1>
+    <section>
+        <form action="#">
+            <fieldset class="contenedor">
+                <legend>Datos personales</legend>
+                <div class="nombre">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div class="apellidos">
+                    <label for="apellidos">Apellido(s):</label>
+                    <input type="text" name="apellidos" id="apellidos">
+                </div>
+            </fieldset>
+            <fieldset class="contenedorPersonas">
+                <legend>Datos de la reserva</legend>
+                <div class="adultos">
+                    <label for="adultos">Adultos</label>
+                    <input type="number" name="adultos" id="adultos" min="2" value="2">                
+                </div>
+                <div class="ninos">
+                    <label for="ninos">niños</label>
+                    <input type="number" name="ninos" id="ninos" min="0" value="0">
+                </div>
+            </fieldset>
+            <fieldset class="contenedor">
+                <legend>Régimen de comidas:</legend>
+                <div class="regimenComidas">
+                    <div>
+                        <input type="radio" name="regimen" id="Solo desayuno" checked>
+                        <label for="solodesayuno">Sólo desayuno</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="regimen" id="Media pension">
+                        <label for="mediaPension">Media pensión</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="regimen" id="Pension completa">
+                        <label for="completaPension">Pensión completa</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="botones">
+                <button type="button" onclick="reservar()">Reservar</button>
+                <button type="reset">Borrar campos</button>
+            </div>
+        </form>
+    </section>
+    </main>
+    
+    <script src="js/formulario.js"></script>
+    
+</body>
+</html>
