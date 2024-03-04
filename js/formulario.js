@@ -16,14 +16,8 @@ function reservar(){
 
     //empezamos a corregir errores de los clientes al introducir datos
     
-
-
-
-
-
-
-
-    alert(`Datos de la reserva:
+    alert(`
+    Datos de la reserva:
     nombre: ${nombre}
     apellidos: ${apellidos}
     adultos: ${adultos}
