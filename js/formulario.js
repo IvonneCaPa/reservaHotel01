@@ -5,17 +5,18 @@ function reservar(){
     let adultos= document.getElementById("adultos").value;
     let ninos = document.getElementById("ninos").value;
     let regimen = document.getElementsByName("regimen");
+    console.log(regimen);
 
     //recorremos regimen para saber cual tiene el check
     for(let i = 0; i < regimen.length; i++){
         if(regimen[i].checked == true){
-            regimen = regimen[i].id
+            regimen = regimen[i].value
             break
         }
     }
+ 
 
-    //empezamos a corregir errores de los clientes al introducir datos
-    
+
     alert(`
     Datos de la reserva:
     nombre: ${nombre}
