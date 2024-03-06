@@ -43,13 +43,13 @@ fieldset {
 .adultos{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 20%;
     padding: 0 12px;
 }
 .ninos{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 20%;
 }
 
 .botones{
